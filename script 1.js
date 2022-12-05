@@ -1,17 +1,15 @@
 const user = {
-    имя: 'Ivan',
-    фамилия: 'Klimov'
+    name: 'Andrei',
+    surname: 'Ivanov',
+    age: 18,
+    position: 'developer',
 };
+function func(student) {
+    for (let key in student) {
 
-function db(usr) {
-    for (let key in usr) {
-
-        if (usr.hasOwnProperty(key)) {
-
-            console.log(`${key}: ${usr[key]}`);
+        if (student.hasOwnProperty(key)) {
+            console.log(key+ ': ' + student[key]);
         };
-
     };
-
 };
-db(user);
+func(user);
